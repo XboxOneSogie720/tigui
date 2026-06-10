@@ -10,16 +10,16 @@
 
 /* Error codes, compatible with tigui_strerror(). */
 typedef enum {
-    TIGUI_E_SUCCESS                   = 0,      // No error.
-    TIGUI_E_BAD_PARAM                 = -1,     // Invalid pointer or other unexpected argument passed to a tigui function.
-    TIGUI_E_COLORSPACE_FULL           = -2,     // No more open palette slots.
-    TIGUI_E_INVALID_NODESET           = -3,     // NULL pointers are inside the nodeset.
-    TIGUI_E_CANVAS_HAS_DUPLICATE_KEYS = -4,     // Duplicate keys set in the canvas.
-    TIGUI_E_MULTIPLE_NODES_SELECTED   = -5,     // Multiple nodes selected in the provided nodeset.
-    TIGUI_E_ELEMENT_NOT_SELECTABLE    = -6,     // Non-selectable element passed to the selection handler.
-    TIGUI_E_UNKNOWN_ELEMENT           = -7,     // Unknown element type passed to the internal drawer.
-    TIGUI_E_USER_EXIT                 = -8,     // User pressed the canvas's exit key (non-fatal).
-    TIGUI_E_THIRDPARTY_ERROR          = -9,     // Generic error.
+    TIGUI_E_SUCCESS                       = 0,  // No error.
+    TIGUI_E_BAD_PARAM                     = -1, // Invalid pointer or other unexpected argument passed to a tigui function.
+    TIGUI_E_COLORSPACE_FULL               = -2, // No more open palette slots.
+    TIGUI_E_INVALID_NODESET               = -3, // NULL pointers are inside the nodeset.
+    TIGUI_E_CANVAS_HAS_DUPLICATE_KEYS     = -4, // Duplicate keys set in the canvas.
+    TIGUI_E_MULTIPLE_NODES_SELECTED       = -5, // Multiple nodes selected in the provided nodeset.
+    TIGUI_E_ELEMENT_NOT_SELECTABLE        = -6, // Non-selectable element passed to the selection handler.
+    TIGUI_E_UNKNOWN_ELEMENT               = -7, // Unknown element type passed to the internal drawer.
+    TIGUI_E_USER_EXIT                     = -8, // User pressed the canvas's exit key (non-fatal).
+    TIGUI_E_THIRDPARTY_ERROR              = -9, // Generic error.
     TIGUI_E_ORCHESTRATOR_ALERT_TRACK_FAIL = -10 // Failure to keep track of alerts. Core library error, should not happen.
 } tigui_error_t;
 
